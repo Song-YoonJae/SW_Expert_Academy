@@ -1,4 +1,4 @@
-package test1244;
+package org.example.D3.test1244;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
