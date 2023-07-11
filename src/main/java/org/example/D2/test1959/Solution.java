@@ -38,10 +38,8 @@ public class Solution {
             if(N < M) {
                 for (int i = 0; i < M - N + 1; i++) {
                     int num = 0;
-                    int n = 0;
                     for (int j = 0; j < N; j++) {
-                        num += B[i + n] * A[j];
-                        n++;
+                        num += B[i + j] * A[j];
                     }
 
                     max = Math.max(max, num);
@@ -49,10 +47,8 @@ public class Solution {
             } else {
                 for (int i = 0; i < N - M + 1; i++) {
                     int num = 0;
-                    int n = 0;
                     for (int j = 0; j < M; j++) {
-                        num += A[i + n] * B[j];
-                        n++;
+                        num += A[i + j] * B[j];
                     }
 
                     max = Math.max(max, num);
